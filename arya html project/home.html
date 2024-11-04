@@ -1,0 +1,685 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				width:100%;
+				height:3490px;
+				background:rgba(0,0,0,0.3) url('bg.jpg') fixed;
+				background-size:cover;
+				background-blend-mode:darken;
+				}
+			.toparea{
+				width:100%;
+				height:40px;
+				background:#0c4462;
+				display:flex;
+				justify-content:center;
+			}
+				.toparea p{
+					background: rgb(2,0,36);
+					background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,51,57,1) 35%, rgba(0,212,255,1) 100%);
+					width:1000px;
+					border:0px;
+					border-radius:6px;
+					display:flex;
+					 margin:5px;
+					 padding-top:3.5px;
+				}
+				.toparea p a{
+					color:#ffd700;
+					text-decoration:none;
+					font-size:20px;
+					text-shadow: -4px 3px 2px rgba(66,172,101,0.71);
+					}
+			.slidearea{
+				background:rgba(0,0,0,0.1) url('gpa5.jpg');
+				background-size:cover;
+				background-blend-mode:darken;
+				width:85%;
+				height:600px;
+				margin:auto;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				opacity:0.8;
+				position:relative;
+				
+			}
+				.slidearea:hover .s1{
+					bottom:0;
+					margin-bottom:200px;
+					 text-align:center;
+					 padding:-20px;
+					display:initial;
+					 
+				}
+				.slidearea pre{
+					line-height:0.8;
+					padding:-20px;
+					bottom:-2px; 
+					position:absolute;
+					height:200px;
+					display:flex;
+					flex-direction:column;
+					justify-content:center;
+					align-items:center;
+					color:yellow;
+					font-size:24px;
+					text-shadow:2px 6px 1px rgba(30,30,30,1);
+					transition:all 1s;
+					<!-- display:none; -->
+					transition:all 3s;
+				}
+					.slidearea:hover pre{
+						padding-bottom:50px;
+						font-size:27px;
+						color: #0f0;
+						border:0px;
+						border-radius: 50px;
+						text-shadow:2px 4px 3px rgba(255,255,255,1);
+						transform:scale(0.5s);
+						box-shadow: 2px 4px 48px 55px rgba(0,0,0,0.75) inset;
+					}
+			.content{
+				 margin:auto;
+				width:1000px;
+				height:300px;
+				background:transparent;
+				 display:flex;
+				 justify-content:center;
+				 align-items:center;
+				 
+					 
+			}
+				  .image{
+					width:300px;
+					height:250px;
+					position:relative;
+					<!-- margin:20px; -->
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					display:flex;
+					overflow:hidden;
+					margin:20px;
+					}
+						.image:hover{
+							border:5px solid #bfc219;
+							border-radius:30px;
+						}
+						.image:hover .details{
+							text-align:center;
+							bottom:5;
+						}
+				.content img{
+					 width:300px;
+					height:250px;
+					margin:20px;
+					transition:transform 2s;
+				}
+					.image:hover img{
+						transform:scale(1.5);
+					}
+						.details{
+							position:absolute;
+							bottom:-300px;
+							width:100%;
+							background:linear-gradient(to bottom,pink,yellow);
+							font-size:20px;
+							 
+							transition:all 0.5s;
+							color: #3467eb;
+						}
+			.info{
+				width:100%;
+				height:500px;
+				 background: rgb(71,70,96);
+				background: linear-gradient(90deg, rgba(71,70,96,1) 0%, rgba(97,196,236,1) 50%, rgba(68,172,171,1) 100%);
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+			}
+				.in1{
+					text-align:center;
+					 line-height:0.9;
+					 
+				}
+				.in1 h3{
+					 margin:10px;
+				}
+				.info img{
+					width:200px;
+					height:200px;
+					border:1px solid black;
+					border-radius:20px;
+				}
+					.in2{
+						color: #fcfcfc;
+						text-shadow: 2px 2px 2px rgba(0,0,0,0.72);
+						font-size:17px;
+					}
+					.info div h3{
+						font-family:roboto,arial;
+					}
+				.in2 h4{
+					text-align:right;
+				}
+			.sta{
+				width:100%;
+				height:700px;
+				background: rgb(68,172,171);
+				background: linear-gradient(90deg, rgba(68,172,171,1) 0%, rgba(68,172,171,1) 0%, rgba(68,172,171,1) 0%, rgba(16,68,250,0.8015581232492998) 50%, rgba(45,69,168,1) 84%, rgba(71,70,96,1) 100%, rgba(71,70,96,1) 100%);
+				margin-top:10px;
+				 
+			}
+				.head{
+					width:100%;
+					height:100px;
+					 background: rgb(34,193,195);
+					background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+					 display:flex;
+					 justify-content:center;
+					 align-items:center;
+					 font-size:30px;
+					 font-family:arial;
+					  font-weight:bold;
+					  color:#0c4462;
+					  transition:all 1s;
+					  
+				}
+					.head:hover{
+							color:#0d0668;
+							font-size:40px;
+							border:0px;
+							border-radius:30px;
+							transform:scale(0.9);
+					}
+				.stai{
+					width:80%;
+					height:580px;
+					display:flex;
+					flex-wrap:wrap;
+					justify-content:space-around;
+					align-items:center;
+					margin:auto;
+				}
+					 
+					.stai1{
+						width:300px;
+						height:250px;
+						 
+						 position:relative;
+					}
+						.stai1:hover{
+							border:3px solid yellow;
+							border-radius:20px;
+						}
+						 
+						.stai1 img{
+							 width:100%;
+							height:100%;
+							border:0px;
+							border-radius:20px;
+						}
+							.stai1 img:hover{
+							border:3px solid yellow;
+							border-radius:20px;
+							}
+							.st1{
+								position:absolute;
+								 bottom:-20px;
+								width:80%;
+								text-align:center;
+								color:green;
+								background:linear-gradient(to bottom,pink,yellow);
+								margin-left:30px;
+								border:2px solid white;
+								border-radius:20px;
+								 
+							}
+								 
+			.depart{
+				width:100%;
+				 background:rgba(255,255,255,0.9);
+				height:600px;
+				margin:20px 0px 20px 0px;
+				}
+					.dhead{
+						width:100%;
+						height:85px;
+						background: #e3bfc0;
+						display:flex;
+						justify-content:center;
+						align-items:center;
+						 font-weight:bold;
+						font-size:30px;
+						transition:border-radius 1s,font-size 0.5s,transform 1s;
+						text-decoration:underline;
+					}
+						.depart:hover .dhead{
+							font-size:40px;
+							font-family:arial;
+							transform:scale(0.9);
+							border:0px;
+							border-radius:30px;
+							background:linear-gradient(to bottom, #c2060c,yellow);
+							font-weight:bold;
+							color:white;
+							text-shadow: -3px 3px 3px rgba(0,0,0,0.79);
+							text-decoration:none;
+						}
+					.dback{
+						width:60%;
+						height:500px;
+						display:flex;
+						flex-wrap:wrap;
+						justify-content:space-around;
+						align-items:center;
+						margin:auto;
+						 
+					}
+						.department{
+							width:350px;
+							height:190px;
+							border:4px solid blue;
+							border-radius:20px;
+							overflow:hidden;
+							opacity:0.8;
+							position:relative;
+						}
+							.department:hover .depimg{
+								opacity:0.4;
+							}
+							 
+							.depimg{
+								width:100%;
+								height:100%;
+								transition:all 1.5s;
+							}
+								.department:hover .depimg{
+									transform:scale(1.3);
+								}
+							.imageinfo{
+								position:absolute;
+								bottom:10px;
+								left:90px;
+								display:flex;
+								flex-direction:column;
+								color: #0a0909; 
+								font-weight:bold;
+								font-size:20px;
+								align-items:center;
+								opacity:1;
+								
+								}
+									.imageinfo:hover .depimg{
+										transform:scale(1.3);
+									}
+									.text{
+										 background: rgb(68,172,171);
+										background: linear-gradient(90deg, rgba(68,172,171,1) 0%, rgba(68,172,171,1) 0%, rgba(68,172,171,1) 0%, rgba(16,68,250,0.8015581232492998) 50%, rgba(45,69,168,1) 100%, rgba(71,70,96,1) 100%, rgba(71,70,96,1) 100%);
+										 opacity:1;
+										 border:opx;
+										 border-radius:10px;
+										 margin-top:10px;
+										 text-shadow: 2px 1px 3px rgba(0,0,0,1);
+										 color:white;
+									}
+									.imageinfo img{
+										width:80px;
+										height:80px;
+										border:0px;
+										border-radius:50px;
+										
+									}
+										.dlogo{
+											 transition:all 1.5s;
+										}
+											.department:hover  .imageinfo img{
+												transform:rotate(360deg);
+											}
+										.d4{
+											left:120px;
+										}
+										.metad{
+											 left:100px;
+										}
+			.com{
+				width:100%;
+				height:750px;
+				 background:rgba(0,0,0,0.3) url('com.jpg') fixed;
+				background-size:cover;
+				background-blend-mode:darken;
+				 
+			}
+				.com1{
+					width:100%;
+					height:90px;
+					 color:white;
+					 font-size:20px;
+					  display:flex;
+					 align-items:center;
+					 justify-content:center;
+				}
+				.comps{
+					width:90%;
+					height:610px;
+					margin:auto;
+					 display:flex;
+					 align-items:center;
+					 flex-wrap:wrap;
+					justify-content:space-between; 
+						
+				}
+					.com2{
+						width:80px;
+						height:80px;
+						margin:30px;
+						border:2px solid yellow;
+						border-radius:20px;
+						transition:height 0.5s,width 0.5s;
+					}
+					.com2 img{
+						width:100%;
+						height:100%;
+						 border:2px solid yellow;
+						border-radius:20px;
+					}
+					.comps:hover .com2{
+						width:86px;
+						height:86px;
+					
+					}
+						.p2{
+							margin-left:50px;
+							 
+						}
+		</style>
+	</head>
+	<body>
+		<div class="toparea">
+			<p>
+				<marquee onmouseover="this.stop()" onmouseout="this.start()" scroll-amount="10">
+					<a href=""> Placement Report Of 2023 </a>
+					&nbsp
+					&nbsp
+					&nbsp
+					&nbsp
+					<a href=" ">Feel Exam Form </a>
+					&nbsp
+					&nbsp
+					&nbsp
+					&nbsp
+					<a href=" ">JUT Portal</a>
+					&nbsp
+					&nbsp
+					&nbsp
+					&nbsp
+					<a href=" ">Scholarship Through e-Kalyan portal</a>
+				</marquee>
+			</p>
+		</div>
+		<div class="slidearea">
+			<pre class="s1">
+							<h2>WELCOME TO </h2>
+				<h1>GOVERNMENT POLYTECHNIC ADITYAPUR</h1>
+						<h2>THE BEST EDUCATIONAL POLYTECHNIC COLLEGE</h2>
+			</pre>
+		</div>
+		<div class="content">
+			 <div class="image">
+				<img src="interd1.jpg" alt="International Day Image">
+				<div class="details">
+					<p>International Day</p>
+					<p>Against Drug Abuse</p>
+				</div>
+			 </div>
+			 <div class="image">
+				<img src="interd2.jpg" alt="International Day Image">
+				<div class="details">
+					<p>International Day</p>
+					<p>Against Drug Abuse</p>
+				</div>
+			 </div>
+			 <div class="image">
+				<img src="interd3.jpg" alt="International Day Image">
+				<div class="details">
+					<p>International Day</p>
+					<p>Against Drug Abuse</p>
+				</div>
+			 </div>
+		</div>
+		<div class="info">
+			<div class="in1">
+				<img src="gpapri.jpg" alt="principal logo">
+				<h3>RESPECTED PRINCIPAL SIR</h3>
+			 </div>
+				&nbsp
+				&nbsp
+				&nbsp
+			 <div class="in2">
+				<p>
+					This is the era of liberalization, privatization and globalization.
+					The need of the hour is training individuals in dynamic way and make them <br />to face different 
+					challenges thrown up by rapidly changing socio-economic technical scenario at the Global level.
+					The Younger Generation<br /> must strive to develop into a well rounded personality with excellent
+					Technical, Managerial, interpersonal and communication skills poised <br />at the cutting-edge of Technology.
+				</p> 
+					&nbsp
+					&nbsp
+				<p>
+					In this context, Government Polytechnic, Adityapur is using it's best effort to impart technical
+					training on the base of holistic approach.
+				</p> 
+					&nbsp
+					&nbsp
+				<p>
+					I am happy to be a part of this Dynamic and Vibrant Institute of <b>Department of Higher & Technical Education,
+					Government of Jharkhand</b><br />.My endeavor is to introduce a pioneering course of growth to achieve the height of
+					excellence and become an important force to recon with in the<br /> field of Technical education Vision global Scenario.
+				</p> 
+					&nbsp
+					&nbsp
+				<h4>
+						  DR SRIKANT PRASAD  
+				</h4> 
+			 </div>
+		</div>
+		<div class="sta">
+			<div class="head">
+				STUDENTS ACTIVITIES
+			</div>
+			<div class="stai">
+				<div class="stai1">
+					<img src="sta/inter.jpg" alt="image">
+					 <div class="st1">
+						<p>International Day Against</p>
+						<p>Drug Abuse</p>
+					 </div>
+				</div>
+				<div  class="stai1">
+					<img src="sta/md.jpg" alt="image">
+					 <div class="st1">
+						<p>Indian Mathematics</p>
+						<p>Day</p>
+					 </div>
+				</div>
+				<div  class="stai1">
+					<img src="sta/swc.jpg" alt="image">
+					 <div class="st1">
+						<p>Science Week </p>
+						<p>Celebration</p>
+					 </div>
+				</div>
+				<div  class="stai1">
+					<img src="sta/wed.jpg" alt="image">
+					 <div class="st1">
+						<p>World Enviroment</p>
+						<p> Day</p>
+					 </div>
+				</div> 
+				<div  class="stai1">
+					<img src="sta/wedws.jpeg" alt="image">
+					 <div class="st1">
+						<p>World Enviroment</p>
+						<p>Week Celebration</p>
+					 </div>
+				</div>
+				<div  class="stai1">
+					<img src="sta/yoga.jpg" alt="image">
+					 <div class="st1">
+						<p>International Day</p>
+						<p>Of Yoga</p>
+					 </div>
+				</div>
+			</div>
+		</div>
+		<div class="depart">
+			<div class="dhead">
+				DEPARTMENTS
+			</div>
+			<div class="dback">
+				<div class="department">
+					<a href=""><img src="depart/cs.jpeg"/ class="depimg"></a>
+					<a href="">
+						<div class="imageinfo">
+							<img src="depart/logo/cse.png" class="dlogo"/>
+							<div class="text">
+								<p>COMPUTER SCIENCE</p>
+								<p>& ENGINEERING</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="department">
+					<a href=""><img src="depart/electrical.jpeg" class="depimg"/></a>
+					<a href="">
+						<div class="imageinfo eled d4">
+							<img src="depart/logo/electrical.jpeg" class="dlogo"/>
+							<div  class="text">
+								<p>ELECTRICAL</p>
+								<p>ENGINEERING</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="department">
+					<a href=""><img src="depart/meta.jpeg" class="depimg"/></a>
+					<a href="">
+						<div class="imageinfo metad">
+							<img src="depart/logo/meta.jpeg" class="dlogo"/>
+							<div class="text">
+								<p>METALLURGICAL</p>
+								<p>ENGINEERING</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="department">
+					<a href=""><img src="depart/mache.jpeg"/ class="depimg"></a>
+					<a href="">
+						<div class="imageinfo d4 mached">
+							<img src="depart/logo/mache.jpeg" class="dlogo"/>
+							<div class="text">
+								<p>MACHENICAL</p>
+								<p>ENGINEERING</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="com">
+			<div class="com1">
+				<h1><u>STUDENTS PLACED</u></h1>
+			</div>
+			<div class="comps">
+				<div class="com2">
+					<img src="comp/hindalko.jpg">
+				</div>
+				<div class="com2">
+					<img src="comp/amns.jpeg">
+				</div>
+				<div class="com2">
+					<img src="comp/bosch.png">
+				</div>
+				<div class="com2">
+					<img src="comp/jindal.jpeg">
+				</div> 
+				<div class="com2">
+					<img src="comp/jsw.jpeg">
+				</div>
+				<div class="com2">
+					<img src="comp/jswbp.png">
+				</div>
+				<div class="com2">
+					<img src="comp/krishna.jpeg">
+				</div>
+				<div class="com2">
+					<img src="comp/narsingh.jpeg">
+				</div>
+				<div class="com2">
+					<img src="comp/tata.jpg">
+				</div>
+				<div class="com2">
+					<img src="comp/tatac.png">
+				</div>
+				<div class="com2">
+					<img src="comp/tatap.png">
+				</div>
+				<div class="com2">
+					<img src="comp/usha.jpg">
+				</div>
+				
+				<div class="com2">
+					<img src="comp/infosys.png">	
+				</div>
+				<div class="com2">
+					<img src="comp/viraj.png">	
+				</div>
+				<div class="com2">
+					<img src="comp/hlmando.png">	
+				</div>
+				<div class="com2">
+					<img src="comp/jspl.png">	
+				</div>
+				<div class="com2">
+					<img src="comp/anand.png">	
+				</div>
+				<div class="com2">
+					<img src="comp/rsi.jpeg">	
+				</div>
+				<div class="com2">
+					<img src="comp/tatatech.jpeg">	
+				</div>
+				<div class="com2">
+					<img src="comp/l&t.png">	
+				</div>
+				<div class="com2">
+					<img src="comp/rfl.jpeg">	
+				</div>
+				<div class="com2">
+					<img src="comp/subros.jpeg">	
+				</div>
+				<div class="com2">
+					<img src="comp/cmr.jpeg">	
+				</div>
+				<div class="com2">
+					<img src="comp/welspun.jpeg">	
+				</div>
+				<div class="com2 p2">
+					<img src="comp/prayagraj.jpeg">	
+				</div>
+				<div class="com2">
+					<img src="comp/wipro.png">	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
